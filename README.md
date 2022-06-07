@@ -1,0 +1,1 @@
+In this project I'm gonna make a simple page with a Etch-a-Sketch.
