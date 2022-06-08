@@ -1,0 +1,64 @@
+body{
+    background-image: url(brushes.jpg);
+    background-size: cover;
+    height: 98vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid gray;
+}
+.size-button, .eraser, .brush, .clean-canva, .color-picker, .rainbow-mode{
+    border: 3px solid gray;
+    height: 60px;
+    width: 180px;
+    margin-left: 200px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'OCR A Std', monospace;
+    background-color: azure;
+    box-shadow: 2px 2px black;
+    transition-duration: 0.2s;
+}
+button:hover{
+    background-color: gray;
+    color: white;
+}
+input:hover{
+    background-color: gray;
+}
+.buttons-container{
+    height: 55%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 170px;
+}
+.container-container{
+    height: 95%;
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-side{
+    height: 95%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-container{
+    font-size: 36px;
+    color: white;
+}
