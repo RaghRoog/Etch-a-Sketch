@@ -1,4 +1,4 @@
-let container =  document.querySelector('.container');
+let container =  document.querySelector('.canva');
 let square = document.createElement('div');
 let containerWidth = container.clientWidth;
 let containerHeight = container.clientHeight;
@@ -24,8 +24,8 @@ let currentSize = defaultSize;
 let sizeButton = document.querySelector('.size-button');
 function setCurrentSize(){
     currentSize = prompt('Select size of your canva: ');
-    if(currentSize>100||currentSize<=0){
-        currentSize = alert("Canva's size can't be lesser than 1 and greater than 100. Size is set to 16.");
+    if(currentSize>100||currentSize<=8){
+        currentSize = alert("Canva's size can't be lesser than 8 and greater than 100. Size is set to 16.");
         currentSize = 16;
     }
     return currentSize;

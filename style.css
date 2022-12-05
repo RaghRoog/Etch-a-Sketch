@@ -1,25 +1,30 @@
 body{
     background-image: url(brushes.jpg);
     background-size: cover;
-    height: 98vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    gap: 12px;
 }
-.container{
+.warning{
+    display: none;
+    color: white;
+    font-family: 'OCR A Std', monospace;
+}
+.canva{
     width: 500px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
     border: 3px solid gray;
 }
-.size-button, .eraser, .brush, .clean-canva, .color-picker, .rainbow-mode{
+button, .color-picker{
     border: 3px solid gray;
-    height: 60px;
-    width: 180px;
-    margin-left: 200px;
+    height: 40px;
+    width: 120px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 0.8rem;
     font-weight: bold;
     font-family: 'OCR A Std', monospace;
     background-color: azure;
@@ -34,31 +39,23 @@ input:hover{
     background-color: gray;
 }
 .buttons-container{
-    height: 55%;
-    width: 35%;
     display: flex;
     flex-direction: column;
-    gap: 24px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 170px;
+    gap: 12px;
 }
-.container-container{
-    height: 95%;
-    width: 65%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.left-side{
-    height: 95%;
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.heading-container{
-    font-size: 36px;
-    color: white;
+@media screen and (max-width: 1000px){
+    .warning{
+        display: block;
+    }
+    body{
+        background-color: white;
+    }
+    .canva, .color-picker, .buttons-container{
+        display: none;
+    }
+    button{
+        display: none;
+    }
 }
